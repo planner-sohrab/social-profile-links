@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Social links profile</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Green: "hsl(75, 94%, 57%)",
+              White: "hsl(0, 0%, 100%)",
+              "Grey-700": "hsl(0, 0%, 20%)",
+              "Grey-800": "hsl(0, 0%, 12%)",
+              "Grey-900": "hsl(0, 0%, 8%)",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-Grey-900">
+    <div class="container min-h-screen flex items-center justify-center">
+      <div class="card bg-Grey-800 max-w-sm p-10 rounded-lg text-white">
+        <div class="image flex items-center justify-center">
+          <img
+            src="assets/images/avatar-jessica.jpeg"
+            alt=""
+            class="rounded-full h-32"
+          />
+        </div>
+        <h1 class="text-center text-2xl py-1 pt-4 font-semibold">
+          Jessica Randall
+        </h1>
+        <h2 class="text-center pb-6 text-lime-400">London, United Kingdom</h2>
+        <p class="text-center mb-3">"Front-end developer and avid reader."</p>
+        <div class="social-media">
+          <button class="bg-Grey-700 py-3 w-full rounded-lg my-4">
+            GitHub
+          </button>
+          <button class="bg-Grey-700 py-3 w-full rounded-lg mb-4">
+            Frontend Mentor
+          </button>
+          <button class="bg-Grey-700 py-3 w-full rounded-lg mb-4">
+            LinkedIn
+          </button>
+          <button class="bg-Grey-700 py-3 w-full rounded-lg mb-4">
+            Twitter
+          </button>
+          <button class="bg-Grey-700 py-3 w-full rounded-lg">Instagram</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
